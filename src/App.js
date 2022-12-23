@@ -1,4 +1,4 @@
-import axios from 'axios'
+
 import './index'
 
 const veryConservativeStreep = async () =>{
@@ -6,7 +6,7 @@ const veryConservativeStreep = async () =>{
   var data = await response.json();
   const assets_12 = data.data[315].attributes.total_net_assets ;
   const assets_11 = data.data[314].attributes.total_net_assets ;
-  let profit= (((assets_12-assets_11)/assets_11)*100).toFixed(13)+"%"
+  let profit= (((assets_12-assets_11)/assets_11)*100).toFixed(3)+"%"
 
   document.getElementById('fund1').textContent=profit
 }
@@ -18,7 +18,7 @@ const conservativeClooney = async () =>{
   var data_1 = await response_1.json();
   let assets_12_1 = data_1.data[315].attributes.total_net_assets ;
   let assets_11_1 = data_1.data[314].attributes.total_net_assets ;
-  let profit_1= (((assets_12_1-assets_11_1)/assets_11_1)*100).toFixed(13)+"%"
+  let profit_1= (((assets_12_1-assets_11_1)/assets_11_1)*100).toFixed(3)+"%"
 
   document.getElementById('fund2').textContent=profit_1
 }
@@ -30,10 +30,9 @@ const moderatePit = async () =>{
   var data_2 = await response_2.json();
   const assets_12 = data_2.data[315].attributes.total_net_assets ;
   const assets_11 = data_2.data[314].attributes.total_net_assets ;
-  let profit= (((assets_12-assets_11)/assets_11)*100).toFixed(13)+"%"
+  let profit= (((assets_12-assets_11)/assets_11)*100).toFixed(3)+"%"
 
   document.getElementById('fund3').textContent=profit
-  console.log(profit)
 }
 moderatePit()
 
@@ -43,22 +42,39 @@ const riskyNorris = async () =>{
   var data = await response.json();
   const assets_12 = data.data[315].attributes.total_net_assets ;
   const assets_11 = data.data[314].attributes.total_net_assets ;
-  let profit= (((assets_12-assets_11)/assets_11)*100).toFixed(13)+"%"
+  let profit= (((assets_12-assets_11)/assets_11)*100).toFixed(3)+"%"
 
   document.getElementById('fund4').textContent=profit
 }
 riskyNorris()
 
-
+const fintualLogo='https://fintual.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa98fb620-b3e4-4035-bc37-d086b0bd1a3f%2Fimagotype-reg.png?id=afe4ff3d-b1be-4453-a8c7-2630e01622e5&table=block&spaceId=9985050f-b673-4063-ada0-b448e02d5db7&width=1060&userId=&cache=v2'
 
 function App() {
   return (
-    <div className="container">
+    <div className="body">
+      <div className='header'>
+        <a href='https://fintual.cl/'><img alt='fintual logo' src={fintualLogo} /></a>
+      </div>
+      <div className='intro'>
+        <h1>¿Cual es la rentabilidad de los fondos de Fintual?</h1>
+        <p>Para el 12 de noviembre, la rentabilidad para los 4 fondos, es la siguiente:</p>
+      </div>
+      <div className="funds">
         <p>Very Conservative Streep: <span id='fund1'></span></p><br></br>
         <p>Conservative Clooney: <span id='fund2'></span></p><br></br>
         <p>Moderate Pit: <span id='fund3'></span></p><br></br>
         <p>Risky Norris: <span id='fund4'></span></p><br></br>
-        <h1>pryecto python: top 5 pesos dentro de cada fondo</h1>
+      </div>
+      <div className='buttons'>
+        <div className='button1'>
+          <button type="button">Script Python</button>
+        </div>
+        <div className='button2'>
+          <button type="button">Script Javacript</button>
+        </div>
+      </div>
+      <strong><p>Hecho por Martín Olivares para Fintual</p></strong>
     </div>
   );
 }
