@@ -58,7 +58,7 @@ function App() {
       </div>
       <div className='intro'>
         <h1>¿Cuál es la rentabilidad de los fondos de Fintual?</h1>
-        <p>Para el 12 de noviembre la rentabilidad es la siguiente:</p>
+        <p>Para el <strong>12 de noviembre</strong> la rentabilidad es la siguiente:</p>
       </div>
       <div className="funds">
         <p>Very Conservative Streep: <span id='fund1'></span></p><br></br>
