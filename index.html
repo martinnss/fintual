@@ -5,33 +5,46 @@
     <link rel="icon" href="https://fintual.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F86d6daea-6d77-4807-bfcc-229e4f2fbc8c%2FUntitled.png?id=4b7ff671-8fe0-4fc5-b858-8dc8eb6b8f90&table=block&spaceId=9985050f-b673-4063-ada0-b448e02d5db7&width=2000&userId=&cache=v2" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <link rel="stylesheet" href="index.css">
     <link rel="apple-touch-icon" href="https://fintual.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F86d6daea-6d77-4807-bfcc-229e4f2fbc8c%2FUntitled.png?id=4b7ff671-8fe0-4fc5-b858-8dc8eb6b8f90&table=block&spaceId=9985050f-b673-4063-ada0-b448e02d5db7&width=2000&userId=&cache=v2" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <title>Rentabilidad Fintual</title>
   </head>
+
+
+
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div >
+      <div class="body">
+        <script src="./App.js"></script>
+        <div class='header'>
+          <a href='https://fintual.cl/'><img alt='fintual logo' src=https://fintual.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa98fb620-b3e4-4035-bc37-d086b0bd1a3f%2Fimagotype-reg.png?id=afe4ff3d-b1be-4453-a8c7-2630e01622e5&table=block&spaceId=9985050f-b673-4063-ada0-b448e02d5db7&width=1060&userId=&cache=v2 /></a>
+        </div>
+        <div class='intro'>
+          <h1>¿Cuál es la rentabilidad de los fondos de Fintual?</h1>
+          <p>Para el <strong>12 de noviembre</strong> la rentabilidad es la siguiente:</p>
+        </div>
+        <div class="funds">
+          <p>Very Conservative Streep: <span id='fund1'></span></p><br></br>
+          <p>Conservative Clooney: <span id='fund2'></span></p><br></br>
+          <p>Moderate Pit: <span id='fund3'></span></p><br></br>
+          <p>Risky Norris: <span id='fund4'></span></p><br></br>
+        </div>
+        <div class='buttons'>
+          <div class='button1'>
+            <a href='https://github.com/martinnss/fintual/blob/master/src/scriptPython/script.ipynb'><button type="button">Script Python</button></a>
+          </div>
+          <div class='button2'>
+            <a href='https://github.com/martinnss/fintual/blob/master/src/App.js'><button type="button">Script Javacript</button></a>
+          </div>
+        </div>
+        <strong><p>Hecho por Martín Olivares para Fintual</p></strong>
+      </div>
+    </div>
   </body>
 </html>
