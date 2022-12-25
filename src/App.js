@@ -68,10 +68,10 @@ function App() {
       </div>
       <div className='buttons'>
         <div className='button1'>
-          <button type="button">Script Python</button>
+          <a href='https://github.com/martinnss/fintual/blob/master/src/scriptPython/script.ipynb'><button type="button">Script Python</button></a>
         </div>
         <div className='button2'>
-          <button type="button">Script Javacript</button>
+          <a href='https://github.com/martinnss/fintual/blob/master/src/App.js'><button type="button">Script Javacript</button></a>
         </div>
       </div>
       <strong><p>Hecho por Martín Olivares para Fintual</p></strong>
