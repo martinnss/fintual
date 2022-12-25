@@ -57,7 +57,7 @@ function App() {
         <a href='https://fintual.cl/'><img alt='fintual logo' src={fintualLogo} /></a>
       </div>
       <div className='intro'>
-        <h1>¿Cual es la rentabilidad de los fondos de Fintual?</h1>
+        <h1>¿Cuál es la rentabilidad de los fondos de Fintual?</h1>
         <p>Para el 12 de noviembre la rentabilidad es la siguiente:</p>
       </div>
       <div className="funds">
